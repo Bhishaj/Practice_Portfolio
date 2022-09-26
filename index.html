@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="navbar">
+            <nav>
+                <div class="logo">Bhishaj</div>
+                <div class="nav-box">
+                    <ul>
+                        <li class="nav-element"><a href="">Home</a></li>
+                        <li class="nav-element"><a href="">About</a></li>
+                        <li class="nav-element"><a href="">Services</a></li>
+                        <li class="nav-element"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-icon" id="openBtn" onclick="navOpen()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="home-section">
+            <div class="home-text">
+                <h3>Hello,</h3>
+                <h2>I am Bhishaj</h2>
+                <h1 class="scale-text">Welcome to my website</h1>
+                <button>Download CV</button>
+                <div class="social-links" style="margin: top 10px;">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="phone-nav" id="phoneNav">
+            <div class="closeBtn" onclick="closeNav()">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <ul>
+                <li class="phone-nav-icon"><a href="">Home</a></li>
+                <li class="phone-nav-icon"><a href="">About</a></li>
+                <li class="phone-nav-icon"><a href="">Services</a></li>
+                <li class="phone-nav-icon"><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="about-section">
+            <div class="my-image-container">
+                <img src="me.jpg" alt="">
+            </div>
+            <div class="about-box">
+                <h1>About</h1>
+                <p>I am passionate about building exellent websites that improves the lines of those around me.I
+                    specialize in creating websites for clients ranging from individuals and small-businesses all the
+                    way to largeenterprise corporations.What would you do if you have web developer at your
+                    fingerprints.</p>
+            </div>
+        </div>
+        <div class="services-section">
+            <h1> Services I offer </h1>
+            <p>I give my 100% on my customer projects to get their money satifaction within a limited time.
+                For now I offer only these services -
+            </p>
+            <div class="services-container">
+                <div class="services-box" id="first-box">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="service-text">Web Development</div>
+                </div>
+                <div class="services-box" id="first-box">
+                    <i class="fa-brands fa-android"></i>
+                    <div class="service-text">Android Development</div>
+                </div>
+                <div class="services-box" id="first-box">
+                    <i class="fa-solid fa-database"></i>
+                    <div class="service-text">Data Enty</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="contact-section">
+            <h1>Want to collaborate ?</h1>
+            <p>Lets do some work together. Fill the form given below, 'll soon contact you.</p>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="email" name="" id="" placeholder="Email address">
+                <select name="country" id="">
+                    <option value="select">Country</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="America">America</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="WestIndies">WestIndies</option>
+                    <option value="England">England</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Australia">Australia</option>
+                    <option value="New Zealand">New Zealand</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="copyright-section">
+                <div class="logo">Bhishaj</div>
+                <div class="copyright-text">Copyright ©. All rights reserved.</div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        function navOpen() {
+            document.getElementById('phoneNav').style.display = "block";
+        }
+        function closeNav() {
+            document.getElementById('phoneNav').style.display = "none";
+        }
+    </script>
+</body>
+</html>
